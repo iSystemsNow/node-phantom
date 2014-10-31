@@ -17,6 +17,7 @@
     "type": "git",
     "url": "https://github.com/iSystemsNow/node-phantom-bridge.git"
   },
+  "private":true,
   "engines": {
     "node": "*"
   },
