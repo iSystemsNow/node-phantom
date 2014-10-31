@@ -1,0 +1,29 @@
+{
+  "name": "node-phantom-bridge",
+  "version": "0.1.0",
+  "description": "Modified version of node-phantom. Bridges via alert and dnode with phantom.  Added header footer image/page numbering",
+  "main": "node-phantom.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "socket.io": ">=0.9.6"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "pngjs": "0.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iSystemsNow/node-phantom-bridge.git"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "author": "Andy Dion <adion@isystemsnow.com> (http://www.isystemsnow.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iSystemsNow/node-phantom-bridge/issues"
+  },
+  "homepage": "https://github.com/iSystemsNow/node-phantom-bridge"
+}
