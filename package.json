@@ -7,7 +7,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "socket.io": ">=0.9.6"
+    "socket.io": "0.9.6"
   },
   "devDependencies": {
     "mocha": "*",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iSystemsNow/node-phantom-bridge.git"
+    "url": "https://github.com/iSystemsNow/node-phantom.git"
   },
   "private":true,
   "engines": {
@@ -24,7 +24,7 @@
   "author": "Andy Dion <adion@isystemsnow.com> (http://www.isystemsnow.com/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iSystemsNow/node-phantom-bridge/issues"
+    "url": "https://github.com/iSystemsNow/node-phantom/issues"
   },
-  "homepage": "https://github.com/iSystemsNow/node-phantom-bridge"
+  "homepage": "https://github.com/iSystemsNow/node-phantom"
 }
