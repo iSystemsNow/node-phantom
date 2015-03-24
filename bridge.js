@@ -125,11 +125,17 @@ controlpage.onAlert=function(msg){
             if(typeof(request[4].footer)!='undefined'){
         	var footnotes;
         	var footerlogo;
+        	var footerposition_left = 380;
         	if(typeof(request[4].footer.footnotes)!='undefined'&&request[4].footer.footnotes.length>0){ 
         	    footnotes = request[4].footer.footnotes;  
         	}
         	if(typeof(request[4].footer.logo)!='undefined'){ 
         	    footerlogo = request[4].footer.logo;  
+        	}
+        	if(typeof(request[4].footer.orientation)!='undefined'){ 
+        	    if(request[4].footer.orientation=='landscape'){
+        		footerposition_left = 540 
+        	    } 
         	}
         	request[4].footer.contents = phantom.callback(function(pageNum, numPages) {
                     var footerhtml ='';
@@ -143,7 +149,7 @@ controlpage.onAlert=function(msg){
                     footerhtml +='<div style="position:relative;" class="bottom-footer-wrapper">';
                     footerhtml +='<div style="float:left; margin-top:20px; margin-left:30px; font-family:Arial;" class="datetime-footer">'+toLocaleDateTimeString(new Date())+'</div>';
                     footerhtml +='<div style="margin-top:20px; float:right; margin-right:30px; font-family:Arial;" class="footer-page-num">Page '+pageNum+' of  '+numPages+'</div>';
-                    footerhtml +='<img width="200" style="float:left; position:absolute; left:380;" class="footer-img" src="'+footerlogo+'" >';
+                    footerhtml +='<img width="200" style="float:left; position:absolute; left:'+footerposition_left+';" class="footer-img" src="'+footerlogo+'" >';
                     footerhtml +='</div>';
                     return footerhtml;
                 });
